@@ -1300,10 +1300,15 @@ nav .logo, .hero-wordmark {
     .modal-title, .modal-list li, .modal-summary, .career-bullets li, .hero-pill, .project-card-title { text-wrap: balance; }
     p { text-wrap: pretty; }
         .profile-card { position: relative; }
-    .hero-mascot { position: absolute; left: 76px; bottom: calc(100% - 26px); width: 150px; height: auto; transform: translateX(-50%); pointer-events: none; z-index: 2; }
-    @media (max-width: 768px) { .hero-mascot { width: 120px; bottom: calc(100% - 20px); } }
+    .hero-mascot { position: absolute; left: 76px; bottom: calc(100% - 23px); width: 135px; height: auto; transform: translateX(-50%); pointer-events: none; z-index: 2; }
+    @media (max-width: 768px) { .hero-mascot { width: 108px; bottom: calc(100% - 18px); } }
       .profile-name { white-space: nowrap; }
       .hero-checks li { text-wrap: balance; }
+      @media (min-width: 769px) {
+      .hero-inner { display: grid; grid-template-columns: 2fr 1fr; gap: 0; align-items: center; }
+      .hero-text { max-width: 580px; }
+      .profile-card { justify-self: start; align-self: end; }
+    }
   </style>
 <!-- Embedded Poppins subset: font license
 Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
