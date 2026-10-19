@@ -1309,6 +1309,9 @@ nav .logo, .hero-wordmark {
       .hero-text { max-width: 580px; }
       .profile-card { justify-self: start; align-self: end; }
     }
+      /* 지표 띠: 뒤 배경을 흐리게 깔고 그 위에 숫자 */
+    .metrics { position: relative; background: rgba(8, 36, 48, 0.42); -webkit-backdrop-filter: blur(18px) saturate(120%); backdrop-filter: blur(18px) saturate(120%); border-top: 1px solid rgba(255,255,255,0.14); border-bottom: 1px solid rgba(255,255,255,0.14); transition: background 0.35s ease; }
+    html.fg-dark .metrics { background: rgba(255,255,255,0.55); border-color: rgba(0,0,0,0.06); }
   </style>
 <!-- Embedded Poppins subset: font license
 Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
