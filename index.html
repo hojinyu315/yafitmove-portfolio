@@ -1313,6 +1313,10 @@ nav .logo, .hero-wordmark {
     .metrics { position: relative; background: rgba(8, 36, 48, 0.42); -webkit-backdrop-filter: blur(18px) saturate(120%); backdrop-filter: blur(18px) saturate(120%); border-top: 1px solid rgba(255,255,255,0.14); border-bottom: 1px solid rgba(255,255,255,0.14); transition: background 0.35s ease; }
     html.fg-dark .metrics { background: rgba(255,255,255,0.55); border-color: rgba(0,0,0,0.06); }
       @media (min-width: 1280px) { .profile-card { margin-left: -80px; } }
+      @media (min-width: 769px) {
+      .hero-checks { display: flex; flex-direction: column; justify-content: space-between; min-height: 144px; }
+      .hero-checks li { margin-bottom: 0; }
+    }
   </style>
 <!-- Embedded Poppins subset: font license
 Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
