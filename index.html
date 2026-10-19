@@ -1299,7 +1299,11 @@ nav .logo, .hero-wordmark {
 }
     .modal-title, .modal-list li, .modal-summary, .career-bullets li, .hero-pill, .project-card-title { text-wrap: balance; }
     p { text-wrap: pretty; }
-    </style>
+        .profile-card { position: relative; }
+    .hero-mascot { position: absolute; left: 100px; bottom: calc(100% - 26px); width: 150px; height: auto; transform: translateX(-50%); pointer-events: none; z-index: 2; }
+    @media (max-width: 768px) { .hero-mascot { width: 120px; bottom: calc(100% - 20px); } }
+      .profile-name { white-space: nowrap; }
+  </style>
 <!-- Embedded Poppins subset: font license
 Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
 
@@ -1444,6 +1448,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 <section class="hero" id="hero">
   <div class="hero-inner">
     <div class="profile-card">
+      <img class="hero-mascot" src="doodoo.gif" alt="야핏무브 캐릭터 두두" aria-hidden="true">
       <img class="profile-photo" src="profile-round.png" alt="유호진">
       <div class="profile-meta">
         <div class="profile-name">유호진</div>
